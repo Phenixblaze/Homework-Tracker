@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN SCREEN -->
+<div class="login" id="loginBox">
+  <h2>🔐 Homework Tracker</h2>
+  <input type="password" id="password" placeholder="Enter password">
+  <button onclick="checkPassword()">Login</button>
+  <p id="error">Wrong password</p>
+</div>
+
+<!-- MAIN APP -->
+<div class="container hidden" id="app">
+  <h1>📚 Homework Tracker</h1>
+
+  <input id="task" placeholder="Enter homework">
+  <button onclick="addTask()">Add</button>
+
+  <ul id="list"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
